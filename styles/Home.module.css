@@ -44,6 +44,7 @@
   grid-template-columns: repeat(4, minmax(25%, auto));
   width: var(--max-width);
   max-width: 100%;
+  grid-gap: 4rem;
 }
 
 .card {
@@ -52,6 +53,7 @@
   background: rgba(var(--card-rgb), 0);
   border: 1px solid rgba(var(--card-border-rgb), 0);
   transition: background 200ms, border 200ms;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
 }
 
 .card span {
@@ -94,6 +96,33 @@
   height: 180px;
   z-index: -1;
 }
+
+.card {
+  background-color: #bc3333;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 32px;
+  text-align: center;
+  transition: all 0.2s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+.blueCard {
+  background-color: #8ab6d6;
+}
+
+.greenCard {
+  background-color: #b3d6a2;
+}
+
+.purpleCard {
+  background-color: #b4a7d6;
+}
+
+
 
 .center::before,
 .center::after {
